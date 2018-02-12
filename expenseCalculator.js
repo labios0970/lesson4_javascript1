@@ -1,8 +1,8 @@
         /************************************************************************************************ 
           Course:  Web Application Development
           Assignment:  Lesson 4 (JavaScript 1)
-          Author:  
-          Date:   
+          Author:  Derek Labios
+          Date:   2/16/18
           Filename: expenseCalculator.js
         *************************************************************************************************/
      
@@ -15,7 +15,6 @@
                   *   method, calculates the total expenses, calculates the percentages for each category, and displays 
                   *   the calculations in the HTML document using the getElementById() method.
                   ***********************************************************************************************/
-
 
                   /*************************************************************************************************
                    * Task 2:  Add the additional code needed to get the values (expense amounts) for the NEW categories 
@@ -36,9 +35,9 @@
 
                   var shelterAmt = document.getElementById("shelterInput").value;
                   var foodAmt = document.getElementById("foodInput").value;
-
-
-
+                  var householdAmt = document.getElementById("householdInput").value;
+                  var transportationAmt = document.getElementById("transportationInput").value;
+                  var miscellaneousAmt = document.getElementById("miscellaneousInput").value;
 
                   /*************************************************************************************************
                    * Task 3:  Add the additional code needed that will convert the user's inputs, which are Strings 
@@ -58,9 +57,9 @@
 
                   shelterAmt = parseFloat(shelterAmt);
                   foodAmt = parseFloat(foodAmt);
-
-
-
+                  householdAmt = parseFloat(householdAmt);
+                  transportationAmt = parseFloat(transportationAmt);
+                  miscellaneousAmt = parseFloat(miscellaneousAmt);
 
                   /******************************************************************************************************
                    * Task 4:  Add the additional code needed to declare variables that will store the calculation
@@ -79,10 +78,10 @@
                   var totalExpenses; //total expenses for the user
                   var shelterPct; //shelter category percentage
                   var foodPct;  //food category percentage
-
-
-
-
+                  var householdPct; //household category percentage
+                  var transportationPct; //transportation category percent
+                  var miscellaneousPct; //miscellaneous category percent
+                  
                   /******************************************************************************************************
                    * Task 5:  Add the additional code needed to calcuate the total expense and the percentages for each 
                    *          of the NEW categories you've added (Household, Transportation, and Miscellaneous). 
@@ -106,10 +105,12 @@
                    *          variables declared in Task 4.  
                   *******************************************************************************************************/   
 
-
                   shelterPct = 100 * (shelterAmt / totalExpenses);
-                  foodPct = 100 * (foodAmt / totalExpenses);
-
+                  foodPctS = 100 * (foodAmt / totalExpenses);
+                  householdPct = 100 * (householdAmt / totalExpenses);
+                  transportationPct = 100 * (transportationAmt / totalExpenses);
+                  miscellaneousPct = 100 * (miscellaneousAmt / totalExpenses);
+                  totalExpenses = shelterAmt + foodAmt + householdAmt + transportationAmt + miscellaneousAmt;
 
                   /******************************************************************************************************
                    * Task 6:  Add the additional code needed to display the total expenses and the percentages for each 
