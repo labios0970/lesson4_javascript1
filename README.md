@@ -4,22 +4,21 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+February 16, 2018
 
 ### Student Name:  
-(First and Last Name)
+Derek Labios
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+In this assignment, I am instructed to add code to both the .html and .js files in order to help fix the application.
 
 ### View Project:
-(Replace this statement with your GitHub Page URL that was created when you 
- published the project.)
+https://labios0970.github.io/lesson4_javascript1/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. I learned how to grab a value from an .html file to a .js file.
+2. I learned how to use the parseFloat() function.
+3. I learned how to display calculations from a .js file to a .html file.
 
 
 
